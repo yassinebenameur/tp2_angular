@@ -1,0 +1,12 @@
+<div Class="border:3px solid black;">
+  <p> EX3</p>
+
+  <mat-radio-group [(ngModel)]="class" aria-label="Select a font">
+    <mat-radio-button value="class1">Class 1</mat-radio-button>
+    <mat-radio-button value="class2">Class 2</mat-radio-button>
+    <mat-radio-button value="class3">Class 3</mat-radio-button>
+  </mat-radio-group>
+
+  <p [ngClass]="class">
+    This text will change it's class </p>
+</div>

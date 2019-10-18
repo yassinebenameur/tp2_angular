@@ -1,0 +1,19 @@
+<div style="border:3px solid black;">
+
+  <p> EX1</p>
+  <mat-form-field class="example-full-width">
+    <input [(ngModel)]="color" matInput placeholder="Color">
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <input [(ngModel)]="fontSize" matInput placeholder="Font Size" type="number">
+  </mat-form-field>
+
+  <mat-radio-group [(ngModel)]="fontFamily" aria-label="Select a font">
+    <mat-radio-button value="'Times New Roman'">Times New Roman</mat-radio-button>
+    <mat-radio-button value="'Comic Sans MS'">Comic Sans MS</mat-radio-button>
+    <mat-radio-button value="'Serif'">Serif</mat-radio-button>
+  </mat-radio-group>
+
+  <p [style.backgroundColor]="color" [style.fontFamily]="fontFamily" [style.fontSize]="fontSize+'px'">
+    This text will change it's color </p>
+</div>
